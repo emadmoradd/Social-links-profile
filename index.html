@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Google Fonts: Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .profile-card {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 400px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .profile-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .location {
+      color: #c4f82a;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .profile-card .btn {
+      background-color: #333333;
+      color: white;
+      border: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .profile-card .btn:hover,
+    .profile-card .btn:focus {
+      background-color: #c4f82a; 
+      color: black;
+      outline: none;
+    }
+
+    .profile-card .btn:active {
+      background-color: #a0d52d; 
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main Section -->
+  <main class="d-flex justify-content-center align-items-center vh-100">
+    <!-- Profile Card -->
+    <article class="profile-card text-center">
+      <!-- Header: Profile Picture and Name -->
+      <header>
+        <!-- Profile Picture -->
+        <img
+          src="assets/images/avatar-jessica.jpeg"
+          alt="Jessica Randall's Profile Picture"
+        />
+        <!-- Name -->
+        <h1>Jessica Randall</h1>
+        <!-- Location -->
+        <p class="location">London, United Kingdom</p>
+      </header>
+
+      <!-- Section: Bio -->
+      <section>
+        <p>"Front-end developer and avid reader."</p>
+      </section>
+
+      <!-- Footer: Links -->
+      <nav>
+        <a href="#" class="btn w-100" role="button">GitHub</a>
+        <a href="#" class="btn w-100" role="button">Frontend Mentor</a>
+        <a href="#" class="btn w-100" role="button">LinkedIn</a>
+        <a href="#" class="btn w-100" role="button">Twitter</a>
+        <a href="#" class="btn w-100" role="button">Instagram</a>
+      </nav>
+    </article>
+  </main>
+
+  <footer class="attribution text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/emadmoradd">Emad Morad</a>.
+  </footer>
+</body>
+</html>
